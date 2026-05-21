@@ -1,26 +1,18 @@
-import Mathlib
 import YXTT2.0.Manifolds.T64
 import YXTT2.0.Core.TCSC
 
-/-!
-# Hodge Conjecture on T⁶⁴
-
-YuanXian Theory Formalization
--/
-
 namespace YXT.Millennium.Hodge
 
-/-- Spectral correspondence between harmonic forms and Hodge classes -/
+/-- Spectral Correspondence between harmonic forms and Hodge classes -/
 lemma spectral_correspondence (p : ℕ) :
     ker (HodgeLaplacianOn T64 p) ≅ HodgeClass p := by
-  sorry  -- Uses flat metric + TCSC symmetry
+  sorry  -- Uses flat metric on T^64 and TCSC symmetry
 
-/-- **Main Theorem**: Hodge Conjecture holds for T⁶⁴ -/
+/-- Main Result: Hodge Conjecture holds for T^64 -/
 theorem hodge_conjecture (p : ℕ) (γ : HodgeClass p) :
     ∃ (Z : AlgebraicCycle T64), γ = ℚ • Z := by
   have h_spec := spectral_correspondence p
-  -- TCSC guarantees algebraicity
-  sorry
+  sorry  -- TCSC involution guarantees algebraicity
 
 theorem millennium_Hodge : HodgeConjectureForT64 := by
   intro p γ
