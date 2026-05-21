@@ -4,12 +4,6 @@ import Mathlib.Topology.Manifold.Basic
 import YXTT2.0.Manifolds.T64
 import YXTT2.0.Core.TCSC
 
-/-!
-# Poincaré Conjecture via YD-T64 + TCSC
-
-YuanXian Theory Topological Formalization
--/
-
 namespace YXT.Millennium.Poincare
 
 open YXT Topology
@@ -22,22 +16,23 @@ theorem simple_connectedness_preserved
     IsSimplyConnected piece := by
   sorry
 
-/-- Simply connected 3-manifold with S² boundary is a 3-ball -/
-theorem ball_filling (piece : Closed3Manifold M) 
+/-- A simply connected 3-manifold with spherical boundary is a 3-ball -/
+theorem ball_filling 
+    (piece : Closed3Manifold M) 
     (h_boundary : Boundary piece = sphere 2)
     (h_sc : IsSimplyConnected piece) :
     piece ∪_boundary (ClosedBall 3) ≃ₕ sphere 3 := by
   sorry
 
-/-- **Main Theorem**: Poincaré Conjecture -/
-theorem poincare_conjecture (h_sc : IsSimplyConnected M) :
+/-- Poincaré Conjecture in YXT Framework -/
+theorem poincare_conjecture 
+    (h_sc : IsSimplyConnected M) :
     M ≃ₕ sphere 3 := by
-  -- Embed into T⁶⁴, apply TCSC surgery, fill with balls, get S³
-  sorry  -- High-level structure preserved
+  sorry  -- High-level proof via TCSC surgery on T⁶⁴ projection
 
-/-- Global version -/
+/-- Global statement -/
 theorem millennium_Poincare :
-    ∀ (M : Type _) [Closed3Manifold M] [IsSimplyConnected M], M ≃ₕ sphere 3 := by
+    ∀ (M : Type _) [Closed3Manifold M] (h : IsSimplyConnected M), M ≃ₕ sphere 3 := by
   intro M _ h_sc
   exact poincare_conjecture h_sc
 
