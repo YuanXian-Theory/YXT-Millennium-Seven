@@ -28,12 +28,6 @@ All seven problems are treated as **structural projections** of the unique 64-di
 1. **High-Dimensional Ontological Layer** — the seven problems are locked as geometric necessities inside the $T^{64}$–$\Psi_{SR}$ matrix.
 2. **Low-Dimensional Projection Layer** — the exact low-dimensional manifestations are formally verified in Lean 4 (and Rocq) with zero `sorry`.
 
-### CCH Framework (Closed Chain Homotopy)
-All seven problem chains are bi-directionally homotopic to the unique Universal Self-Referential Closed Chain $\gamma_{\mathrm{Univ}}$:
-$$
-\gamma_{\mathrm{Poincaré}} \simeq_H \gamma_{\mathrm{Univ}} \simeq_H \gamma_{\mathrm{Hodge}} \simeq_H \gamma_{\mathrm{YM}} \simeq_H \gamma_{\mathrm{NS}} \simeq_H \gamma_{\mathrm{RH}} \simeq_H \gamma_{\mathrm{PvsNP}} \simeq_H \gamma_{\mathrm{BSD}}
-$$
-
 ### Unified Judgment Result
 | Problem              | Traditional Domain     | $T^{64}$ Core Structure                  | Final Verdict   |
 |----------------------|------------------------|------------------------------------------|-----------------|
@@ -45,13 +39,6 @@ $$
 | P vs NP              | Computational Complexity | Rigid complexity stratification of $H_1$ | $\mathbf{P} \neq \mathbf{NP}$ |
 | Poincaré Conjecture  | Geometric Topology     | Unique projection of spherical chains    | Holds           |
 
-
-- `lean/Millennium_Problems.lean` — unified judgment of all seven problems  
-- Supporting modules:  
-  - `T64_Topology.lean`  
-  - `TCSC_Laws.lean`  
-  - `CCH_Framework.lean`  
-  - `ZFC_Lifting.lean`
 
 ### Seven Millennium Problems Formalized
 
